@@ -1,0 +1,53 @@
+/* Стилі для верхньої смуги */
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.6); /* Прозорий чорний фон */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 10; /* Робимо верхнім шаром */
+}
+
+/* Стилі для шапки */
+header {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Додаємо відступи зверху і знизу */
+}
+
+/* Стилі для навігаційних кнопок */
+nav {
+    display: flex;
+    justify-content: center; /* Центруємо навігацію по горизонталі */
+    padding: 10px 0; /* Додаємо відступи знизу */
+}
+
+.nav-links {
+    list-style: none; /* Видаляємо стандартні маркери */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Використовуємо флексбокс для горизонтального вирівнювання */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Відступи між кнопками */
+}
+
+.nav-links a {
+    text-decoration: none; /* Відключаємо підкреслення */
+    color: white; /* Білий колір тексту */
+    font-size: 16px; /* Розмір шрифту */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px; /* Округлені кути */
+    background-color: rgba(0, 0, 0, 0.7); /* Прозорий фон для кнопок */
+    transition: background-color 0.3s ease; /* Плавний ефект при наведені */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Зміна кольору при наведенні */
+}
