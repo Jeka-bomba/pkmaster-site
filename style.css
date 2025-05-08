@@ -1,53 +1,50 @@
-/* Стилі для верхньої смуги */
-.top-bar {
-    background-color: rgba(0, 0, 0, 0.6); /* Прозорий чорний фон */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 100%;
-    z-index: 10; /* Робимо верхнім шаром */
+/* Загальні налаштування */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* Стилі для шапки */
+/* Шапка */
 header {
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0; /* Додаємо відступи зверху і знизу */
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 40px;
+  color: white;
 }
 
-/* Стилі для навігаційних кнопок */
-nav {
-    display: flex;
-    justify-content: center; /* Центруємо навігацію по горизонталі */
-    padding: 10px 0; /* Додаємо відступи знизу */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.nav-links {
-    list-style: none; /* Видаляємо стандартні маркери */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Використовуємо флексбокс для горизонтального вирівнювання */
+.nav-buttons a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.nav-links li {
-    margin: 0 15px; /* Відступи між кнопками */
+.nav-buttons a:hover {
+  color: #00bcd4;
 }
 
-.nav-links a {
-    text-decoration: none; /* Відключаємо підкреслення */
-    color: white; /* Білий колір тексту */
-    font-size: 16px; /* Розмір шрифту */
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px; /* Округлені кути */
-    background-color: rgba(0, 0, 0, 0.7); /* Прозорий фон для кнопок */
-    transition: background-color 0.3s ease; /* Плавний ефект при наведені */
+/* Головна секція */
+.hero {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #f5f5f5;
 }
 
-.nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Зміна кольору при наведенні */
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #333;
 }
